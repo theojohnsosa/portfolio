@@ -37,6 +37,7 @@ const Header = () => {
           className="md:hidden text-2xl"
           onClick={() => setMenuOpen(true)}>
           <Image
+            className='cursor-pointer'
             src="/hamburger.svg"
             alt="menu"
             width={24}
@@ -52,6 +53,7 @@ const Header = () => {
             onClick={() => setMenuOpen(false)}
           >
             <Image
+              className='cursor-pointer'
               src="/close.svg"
               alt="close menu"
               width={24}
