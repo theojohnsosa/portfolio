@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Sidebar = () => {
   return (
     <>
-        <aside className='w-[360px] min-h-screen flex flex-col gap-6 pt-[75px] pr-[24px] pl-[24px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
+        <aside className='w-full md:w-[360px] min-h-fit md:min-h-screen flex flex-col gap-6 pt-[75px] pr-[24px] pl-[24px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
             <div className='w-full flex flex-col'>
                 <img
                     className='rounded-lg block mb-[10px]'
@@ -81,7 +81,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <hr className="border-[#E0E0E0]" />
-            <button className='w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-lg'>
+            <button className='mt-auto  mb-[60px] md:mb-[60px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-lg'>
                 <Image
                     src="/github.svg"
                     alt='github'

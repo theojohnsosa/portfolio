@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar';
 export default function Home() {
   return (
     <>
-      <div>
+      <div className='flex flex-col md:flex-row'>
         <Sidebar />
       </div>
     </>
