@@ -4,8 +4,8 @@ import Image from 'next/image'
 const Sidebar = () => {
   return (
     <>
-        <aside className='w-full md:w-[360px] min-h-fit md:min-h-screen flex flex-col gap-6 pt-[75px] pr-[24px] pl-[24px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
-            <div className='w-full flex flex-col'>
+        <aside className='w-full md:w-[360px] md:min-w-[360px] min-h-fit md:min-h-screen flex flex-col pt-[75px] pr-[24px] pl-[24px] pb-[20px] md:pb-[60px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
+            <div className='w-full flex flex-col mb-[20px]'>
                 <img
                     className='rounded-lg block mb-[10px]'
                     src="/profile.svg"
@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <h1 className='font-semibold text-[30px]'>Theojohn Sosa</h1>
                 <p className='font-semibold text-[16px] text-[#006EF4]'>Frontend Developer</p>
             </div>
-            <div className='flex flex-col gap-[10px]'>
+            <div className='flex flex-col gap-[10px] mb-[20px]'>
                 <div className='flex items-center gap-[12px] text-[16px] font-normal text-black'>
                     <Image 
                         src="/location.svg" 
@@ -61,7 +61,7 @@ const Sidebar = () => {
                     <p>Accepting new projects</p>
                 </div>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col mb-[20px]'>
                 <p className='font-semibold text-[16px] mb-[5px]'>Services Offered</p>
                 <div className='flex items-center gap-[10px]'>
                     <Image 
@@ -81,7 +81,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <hr className="border-[#E0E0E0]" />
-            <button className='mt-auto  mb-[60px] md:mb-[60px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-lg'>
+            <button className='mt-[20px] mb-[10px] md:mb-[0px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-lg'>
                 <Image
                     src="/github.svg"
                     alt='github'
