@@ -28,25 +28,25 @@ export default function Home() {
               <Link 
                 className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-[2px] border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Checkmate</p>
               </Link>
               <Link 
                 className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-[2px] border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Manila Classico</p>
               </Link>
               <Link 
                 className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-[2px] border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Marquee Cinemas</p>
               </Link>
               <Link 
                 className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-[2px] border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Unity</p>
               </Link>
             </div>
@@ -57,7 +57,7 @@ export default function Home() {
               <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 123px, #E0E0E0 123px)'}} />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-[12px]'>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/nextjs.svg'
@@ -70,7 +70,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Full Stack Toolkit</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/tailwindcss.svg'
@@ -83,7 +83,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Responsive Styling</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/stripe.svg'
@@ -96,7 +96,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Payment Processing</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/firebase.svg'
@@ -109,7 +109,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Auth & Database</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/resend.svg'
@@ -122,7 +122,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Email Service</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/react.svg'
@@ -135,7 +135,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Frontend Framework</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/figma.svg'
@@ -148,7 +148,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>UI Design Tool</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/vercel.svg'
@@ -161,7 +161,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Cloud Hosting</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
                   src='/github 2.svg'
@@ -173,6 +173,54 @@ export default function Home() {
                   <p className='font-semibold text-[16px]'>GitHub</p>
                   <p className='font-normal text-[12px] text-[#797979]'>Version Control</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col w-full'>
+            <div className='flex flex-col mb-[20px]'>
+              <p className='font-semibold text-[16px] mb-[6px]'>Experience</p>
+              <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 84px, #E0E0E0 84px)'}} />
+            </div>
+            <div className='flex flex-col gap-[20px]'>
+              <div className='flex items-center justify-between w-full bg-[#F0F0F0] shadow-md rounded-lg px-[24px] py-[15px] border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <div className='flex items-center'>
+                  <div className='w-[50px] h-[50px] bg-[#222222] text-white flex items-center justify-center rounded-lg font-semibold text-[24px] shrink-0 mr-[20px]'>1</div>
+                  <div className='flex flex-col'>
+                    <p className='font-semibold text-[16px]'>Full-Stack Developer</p>
+                    <p className='font-normal text-[14px] text-[#797979]'>National University</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[16px] shrink-0 ml-[16px]'>2024 – <span className='font-semibold'>Current</span></p>
+              </div>
+              <div className='flex items-center justify-between w-full bg-[#F0F0F0] shadow-md rounded-lg px-[24px] py-[15px] border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <div className='flex items-center'>
+                  <div className='w-[50px] h-[50px] bg-[#222222] text-white flex items-center justify-center rounded-lg font-semibold text-[24px] shrink-0 mr-[20px]'>2</div>
+                  <div className='flex flex-col'>
+                    <p className='font-semibold text-[16px]'>Operations Assistant (Intern)</p>
+                    <p className='font-normal text-[14px] text-[#797979]'>PC Green</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[16px] shrink-0 ml-[16px]'>April – May 2024</p>
+              </div>
+              <div className='flex items-center justify-between w-full bg-[#F0F0F0] shadow-md rounded-lg px-[24px] py-[15px] border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <div className='flex items-center'>
+                  <div className='w-[50px] h-[50px] bg-[#222222] text-white flex items-center justify-center rounded-lg font-semibold text-[24px] shrink-0 mr-[20px]'>3</div>
+                  <div className='flex flex-col'>
+                    <p className='font-semibold text-[16px]'>Web Developer</p>
+                    <p className='font-normal text-[14px] text-[#797979]'>STI College</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[16px] shrink-0 ml-[16px]'>2022 – 2024</p>
+              </div>
+              <div className='flex items-center justify-between w-full bg-[#F0F0F0] shadow-md rounded-lg px-[24px] py-[15px] border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <div className='flex items-center'>
+                  <div className='w-[50px] h-[50px] bg-[#222222] text-white flex items-center justify-center rounded-lg font-semibold text-[24px] shrink-0 mr-[20px]'>4</div>
+                  <div className='flex flex-col'>
+                    <p className='font-semibold text-[16px]'>UI/UX Designer</p>
+                    <p className='font-normal text-[14px] text-[#797979]'>STI College</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[16px] shrink-0 ml-[16px]'>2022 – 2024</p>
               </div>
             </div>
           </div>
