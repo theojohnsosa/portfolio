@@ -1,13 +1,14 @@
 import Sidebar from './components/Sidebar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       <div className='flex flex-col md:flex-row'>
         <Sidebar />
-        <main className='flex flex-col p-[40px]'>
-          <div className='flex flex-col w-full h-fit gap-[14px] mb-[50px]'>
+        <main className='flex flex-col p-[40px] gap-[50px]'>
+          <div className='flex flex-col w-full gap-[14px]'>
             <p className='font-semibold text-[16px]'>About Me</p>
             <p className='font-normal text-[18px]'>Frontend Developer | React, Next.js, Tailwind CSS, TypeScript</p>
             <p className='font-normal text-[18px]'>Building clear, usable interfaces and structured web applications. Known for that attention to detail, thoughtful UI decisions, and treating every project as production-ready.</p>
@@ -17,37 +18,162 @@ export default function Home() {
               Click for more...
             </Link>
           </div>
-          <div className='flex flex-col w-full h-fit'>
+          <div className='flex flex-col w-full'>
             <div className='flex flex-col mb-[20px]'>
               <p className='font-semibold text-[16px] mb-[6px]'>Projects</p>
               <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 62px, #E0E0E0 62px)'}} />
             </div>
-            <button className='w-full h-[60px] flex items-center justify-center bg-[#222222] text-white font-medium text-[16px] rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-lg mb-[20px]'>View all projects</button>
+            <button className='w-full h-[60px] flex items-center justify-center bg-[#222222] text-white font-medium text-[16px] rounded-lg hover:bg-[#303030] transition-colors duration-100 mb-[20px]'>View all projects</button>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
               <Link 
-                className='flex flex-col gap-[12px]'
+                className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg hover:shadow-lg'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Checkmate</p>
               </Link>
               <Link 
-                className='flex flex-col gap-[12px]'
+                className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg hover:shadow-lg'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Manila Classico</p>
               </Link>
               <Link 
-                className='flex flex-col gap-[12px]'
+                className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg hover:shadow-lg'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Marquee Cinemas</p>
               </Link>
               <Link 
-                className='flex flex-col gap-[12px]'
+                className='flex flex-col gap-[12px] group'
                 href='#'>
-                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg hover:shadow-lg'></div>
+                <div className='w-full aspect-video bg-[#E0E0E0] rounded-lg shadow-md border border-transparent transition-all duration-100 group-hover:border-[#006EF4]'></div>
                 <p className='font-medium text-[16px]'>Unity</p>
               </Link>
+            </div>
+          </div>
+          <div className='flex flex-col w-full'>
+            <div className='flex flex-col mb-[20px]'>
+              <p className='font-semibold text-[16px] mb-[6px]'>Tools I work with</p>
+              <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 123px, #E0E0E0 123px)'}} />
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-[12px]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/nextjs.svg'
+                  alt='Next.js'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Next.js</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Full Stack Toolkit</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/tailwindcss.svg'
+                  alt='Tailwind CSS'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Tailwind CSS</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Responsive Styling</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/stripe.svg'
+                  alt='Stripe'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Stripe</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Payment Processing</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/firebase.svg'
+                  alt='Firebase'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Firebase</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Auth & Database</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/resend.svg'
+                  alt='Resend'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Resend</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Email Service</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/react.svg'
+                  alt='React JS'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>React</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Frontend Framework</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/figma.svg'
+                  alt='Figma'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Figma</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>UI Design Tool</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/vercel.svg'
+                  alt='Vercel'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Vercel</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Cloud Hosting</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image 
+                  className='mr-[20px]'
+                  src='/github 2.svg'
+                  alt='GitHub'
+                  width={40}
+                  height={40}
+                />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>GitHub</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Version Control</p>
+                </div>
+              </div>
             </div>
           </div>
         </main>
