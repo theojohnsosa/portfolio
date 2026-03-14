@@ -4,9 +4,11 @@ import React from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
 
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -27,10 +29,10 @@ const Header = () => {
           © Theo
         </Link>
         <nav className="hidden md:flex gap-7">
-          <Link href="/" className="font-semibold">Overview</Link>
-          <Link href="/projects" className="font-normal">Projects</Link>
-          <Link href="/services" className="font-normal">Services</Link>
-          <Link href="/more-info" className="font-normal underline italic">More Info</Link>
+          <Link href="/" className={pathname === "/" ? "font-semibold" : "font-normal hover:underline"}>Overview</Link>
+          <Link href="/projects" className={pathname === "/projects" ? "font-semibold" : "font-normal hover:underline"}>Projects</Link>
+          <Link href="/services" className={pathname === "/services" ? "font-semibold" : "font-normal hover:underline"}>Services</Link>
+          <Link href="/more-info" className={pathname === "/more-info" ? "font-semibold underline italic" : "font-normal underline italic hover:font-semibold"}>More Info</Link>
         </nav>
         <button
           className="md:hidden text-2xl"
