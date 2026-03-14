@@ -99,13 +99,13 @@ export default function Home() {
               <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image 
                   className='mr-[20px]'
-                  src='/firebase.svg'
-                  alt='Firebase'
+                  src='/supabase.svg'
+                  alt='Supabase'
                   width={40}
                   height={40}
                 />
                 <div className='flex flex-col'>
-                  <p className='font-semibold text-[16px]'>Firebase</p>
+                  <p className='font-semibold text-[16px]'>Supabase</p>
                   <p className='font-normal text-[12px] text-[#797979]'>Auth & Database</p>
                 </div>
               </div>
