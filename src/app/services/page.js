@@ -1,0 +1,123 @@
+import React from 'react'
+import Sidebar from '../components/Sidebar'
+import Image from 'next/image'
+
+const page = () => {
+  return (
+    <>
+      <div className='flex flex-col md:flex-row'>
+        <Sidebar />
+        <main className='flex flex-col p-[40px]'>
+
+          <div className='flex flex-col w-full gap-[14px] mb-[50px]'>
+            <p className='font-semibold text-[16px]'>Services I Offer</p>
+            <p className='font-normal text-[18px]'>My services focus on web development and UI/UX design—creating modern interfaces and reliable web applications built for usability, performance, and real-world use.</p>
+            <p className='font-normal text-[18px]'>A look at the core tools and technologies I work with.</p>
+          </div>
+
+          <div className='flex flex-col w-full mb-[50px]'>
+            <div className='flex flex-col mb-[20px]'>
+              <p className='font-semibold text-[16px] mb-[6px]'>Tools I work with</p>
+              <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 123px, #E0E0E0 123px)'}} />
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-[12px]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/nextjs.svg' alt='Next.js' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Next.js</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Full Stack Toolkit</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/tailwindcss.svg' alt='Tailwind CSS' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Tailwind CSS</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Responsive Styling</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/stripe.svg' alt='Stripe' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Stripe</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Payment Processing</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/supabase.svg' alt='Supabase' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Supabase</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Auth & Database</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/resend.svg' alt='Resend' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Resend</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Email Service</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/react.svg' alt='React JS' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>React</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Frontend Framework</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/figma.svg' alt='Figma' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Figma</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>UI Design Tool</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/vercel.svg' alt='Vercel' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>Vercel</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Cloud Hosting</p>
+                </div>
+              </div>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <Image className='mr-[20px]' src='/github 2.svg' alt='GitHub' width={40} height={40} />
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-[16px]'>GitHub</p>
+                  <p className='font-normal text-[12px] text-[#797979]'>Version Control</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='flex flex-col w-full'>
+            <div className='flex flex-col mb-[20px]'>
+              <p className='font-semibold text-[16px] mb-[6px]'>My Services</p>
+              <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 91px, #E0E0E0 91px)'}} />
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
+              <div className='flex flex-col gap-[12px] w-full bg-[#F0F0F0] shadow-sm rounded-lg p-[24px] border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <div className='flex items-start'>
+                  <Image className='mr-[18px]' src='/webdev.svg' alt='Web Development' width={40} height={40} />
+                  <div className='flex flex-col gap-[6px]'>
+                    <p className='font-semibold text-[16px]'>Web Development</p>
+                    <p className='font-normal text-[12px] text-[#797979]'>Designing and building responsive, scalable web applications with modern frameworks and clean architecture. I focus on performance, usability, and maintainable code to deliver reliable digital products.</p>
+                  </div>
+                </div>
+              </div>
+              <div className='flex flex-col gap-[12px] w-full bg-[#F0F0F0] shadow-sm rounded-lg p-[24px] border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+                <div className='flex items-start'>
+                  <Image className='mr-[18px]' src='/ui.svg' alt='UI/UX Design' width={40} height={40} />
+                  <div className='flex flex-col gap-[6px]'>
+                    <p className='font-semibold text-[16px]'>UI/UX Design & Prototyping</p>
+                    <p className='font-normal text-[12px] text-[#797979]'>Designing clear, user-centered interfaces and translating ideas into structured layouts and interactive prototypes. I focus on usability, visual consistency, and logical user flows to ensure products are intuitive before development begins.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </>
+  )
+}
+
+export default page
