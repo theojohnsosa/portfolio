@@ -22,7 +22,6 @@ const Header = () => {
 
   return (
     <>
-
       <header className="flex justify-between items-center sticky top-0 z-1 px-10 py-4 border-b border-[#E0E0E0] bg-[#F2F0EF]">
         <Link href="/" className="font-semibold text-lg">
           © Theo
@@ -45,7 +44,6 @@ const Header = () => {
           />
         </button>
       </header>
-
       {menuOpen && (
         <div className="fixed top-0 right-0 h-full w-72 bg-[#F2F0EF] border-l border-[#E0E0E0] z-2 shadow-lg flex flex-col">
           <button

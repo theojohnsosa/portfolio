@@ -51,9 +51,9 @@ const Sidebar = () => {
                     </a>
                 </div>
             </div>
-            <hr className="border-[#E0E0E0]" />
+            <hr className="border-[#E0E0E0] mb-[20px]" />
             <div className='flex flex-col gap-[20px] mb-[60px]'>
-                <button className='w-full h-[50px] bg-[#006EF4] text-white text-[16px] font-medium rounded-lg hover:bg-[#4599FF] hover:shadow-lg transition-colors duration-100'>
+                <button className='w-full h-[50px] bg-[#006EF4] text-white text-[16px] font-medium rounded-lg hover:bg-[#4599FF] hover:shadow-sm transition-colors duration-100'>
                     Work with Me
                 </button>
                 <div className='flex items-center'>
@@ -81,7 +81,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <hr className="border-[#E0E0E0]" />
-            <button className='mt-[20px] mb-[10px] md:mb-[0px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-lg'>
+            <button className='mt-[20px] mb-[10px] md:mb-[0px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-sm'>
                 <Image
                     src="/github.svg"
                     alt='github'
