@@ -5,8 +5,11 @@ import Image from 'next/image'
 const page = () => {
   return (
     <>
-      <div className='flex flex-col md:flex-row'>
-        <Sidebar />
+      <div className='flex flex-col md:flex-row'> 
+        <div className='hidden md:block'>
+          <Sidebar />
+        </div>
+
         <main className='flex flex-col p-[40px]'>
 
           <div className='flex flex-col w-full gap-[14px] mb-[50px]'>

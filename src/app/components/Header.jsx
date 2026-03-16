@@ -61,10 +61,10 @@ const Header = () => {
             />
           </button>
           <nav className="flex-1 overflow-auto px-10 pt-20 pb-6 flex flex-col gap-4">
-            <Link href="/" className="font-semibold">Overview</Link>
-            <Link href="/projects" className="font-normal">Projects</Link>
-            <Link href="/services" className="font-normal">Services</Link>
-            <Link href="/more-info" className="font-normal underline italic">More Info</Link>
+            <Link href="/" className={pathname === "/" ? "font-semibold" : "font-normal hover:underline"}>Overview</Link>
+            <Link href="/projects" className={pathname === "/projects" ? "font-semibold" : "font-normal hover:underline"}>Projects</Link>
+            <Link href="/services" className={pathname === "/services" ? "font-semibold" : "font-normal hover:underline"}>Services</Link>
+            <Link href="/more-info" className={pathname === "/more-info" ? "font-semibold underline italic" : "font-normal underline italic hover:font-semibold"}>More Info</Link>
           </nav>
           <p className="mt-auto text-center font-normal pb-6">
             © Theojohn Sosa

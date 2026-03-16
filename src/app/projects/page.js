@@ -6,7 +6,9 @@ const page = () => {
   return (
     <>
       <div className='flex flex-col md:flex-row'>
-        <Sidebar />
+        <div className='hidden md:block'>
+          <Sidebar />
+        </div>
 
         <main className='flex flex-col p-[40px] gap-[50px]'>
           
