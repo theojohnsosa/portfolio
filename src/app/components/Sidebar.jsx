@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Sidebar = () => {
   return (
@@ -81,7 +82,10 @@ const Sidebar = () => {
                 </div>
             </div>
             <hr className="border-[#E0E0E0]" />
-            <button className='mt-[20px] mb-[10px] md:mb-[0px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-sm'>
+            <Link
+                href="https://www.github.com/theojohnsosa"
+                target='_blank'
+                className='mt-[20px] mb-[10px] md:mb-[0px] w-full h-[50px] flex items-center justify-center gap-[12px] bg-[#222222] text-white text-[16px] font-medium rounded-lg hover:bg-[#303030] transition-colors duration-100 hover:shadow-sm'>
                 <Image
                     src="/github.svg"
                     alt='github'
@@ -89,7 +93,7 @@ const Sidebar = () => {
                     height={20}
                  />
                     GitHub Profile
-            </button>
+            </Link>
         </aside>
     </>
   )

@@ -1,7 +1,6 @@
 import Sidebar from './components/Sidebar';
 import Link from 'next/link';
 import Image from 'next/image';
-import { navigate } from 'next/dist/client/components/segment-cache/navigation';
 
 export default function Home() {
   return (
@@ -26,8 +25,10 @@ export default function Home() {
               <p className='font-semibold text-[16px] mb-[6px]'>Projects</p>
               <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 62px, #E0E0E0 62px)'}} />
             </div>
-            <Link href="/projects">
-              <button className='w-full h-[60px] flex items-center justify-center bg-[#222222] text-white font-medium text-[16px] rounded-lg hover:bg-[#303030] hover:shadow-sm transition-colors duration-100 mb-[20px]'>View all projects</button>
+            <Link 
+              href="/projects"
+              className='w-full h-[60px] flex items-center justify-center bg-[#222222] text-white font-medium text-[16px] rounded-lg hover:bg-[#303030] hover:shadow-sm transition-colors duration-100 mb-[20px]'>
+                View all projects
             </Link>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
 
