@@ -1,38 +1,8 @@
-import Sidebar from './components/Sidebar';
-import Link from 'next/link';
-import Image from 'next/image';
-import ProjectModal from './components/ProjectModal';
-
-const projects = [
-  {
-    name: "Checkmate",
-    description: "A mobile-first attendance tracking application built with Android that streamlines classroom check-ins while maintaining security and accuracy.",
-    tags: ["Java", "Firebase"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Manila Classico",
-    description: "A modern web application built with Next.js and Tailwind CSS.",
-    tags: ["Next.js", "Tailwind"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Marquee Cinemas",
-    description: "A cinema booking platform built with React and Firebase.",
-    tags: ["React", "Firebase"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Unity",
-    description: "A full-stack web application built with Next.js and Supabase.",
-    tags: ["Next.js", "Supabase"],
-    liveDemo: "#",
-    sourceCode: "#"
-  }
-]
+import Sidebar from './components/Sidebar'
+import Link from 'next/link'
+import Image from 'next/image'
+import ProjectModal from './components/ProjectModal'
+import projects from './data/projects'
 
 export default function Home() {
   return (
@@ -63,7 +33,7 @@ export default function Home() {
               View all projects
             </Link>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
-              {projects.map((project) => (
+              {projects.slice(0, 4).map((project) => (
                 <ProjectModal
                   key={project.name}
                   project={project}
@@ -197,5 +167,5 @@ export default function Home() {
         </main>
       </div>
     </>
-  );
+  )
 }
