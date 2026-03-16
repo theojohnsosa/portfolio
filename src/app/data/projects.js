@@ -1,46 +1,46 @@
 const projects = [
-  {
-    name: "Checkmate",
-    description: "A mobile-first attendance tracking application built with Android that streamlines classroom check-ins while maintaining security and accuracy.",
-    tags: ["Java", "Firebase"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Manila Classico",
-    description: "A modern web application built with Next.js and Tailwind CSS.",
-    tags: ["Next.js", "Tailwind"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Marquee Cinemas",
-    description: "A cinema booking platform built with React and Firebase.",
-    tags: ["React", "Firebase"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Unity",
-    description: "A full-stack web application built with Next.js and Supabase.",
-    tags: ["Next.js", "Supabase"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Motion Studio",
-    description: "A motion design portfolio built with React and Framer Motion.",
-    tags: ["React", "Framer Motion"],
-    liveDemo: "#",
-    sourceCode: "#"
-  },
-  {
-    name: "Polaris",
-    description: "A navigation and wayfinding application built with Next.js.",
-    tags: ["Next.js", "Tailwind"],
-    liveDemo: "#",
-    sourceCode: "#"
-  }
+    {
+        name: "Checkmate",
+        description: "Checkmate is a mobile-first attendance tracking application developed for Android. It streamlines classroom check-ins while ensuring robust security and precise record-keeping, leveraging Firebase for real-time data management.",
+        tags: ["Java", "Firebase"],
+        liveDemo: "#",
+        sourceCode: "#"
+    },
+    {
+        name: "Manila Classico",
+        description: "Manila Classico Barbershop Management System is a comprehensive desktop solution built with Java Swing and AWT in NetBeans. It optimizes booking, customer management, and barber scheduling, providing an efficient and user-friendly interface for barbershop operations.",
+        tags: ["Java", "Swing", "AWT"],
+        liveDemo: "#",
+        sourceCode: "#"
+    },
+    {
+        name: "Marquee Cinemas",
+        description: "Marquee Cinemas is a desktop point-of-sale system designed for movie theaters. It facilitates ticket sales, snack and beverage transactions, and combo meal management, utilizing Java Swing and AWT for a seamless user experience.",
+        tags: ["Java", "Swing", "AWT"],
+        liveDemo: "#",
+        sourceCode: "#"
+    },
+    {
+        name: "Unity",
+        description: "Unity is an offline banking simulation application featuring balance inquiries, deposits, withdrawals, loan management, and bill payments. Developed with Java Swing and AWT, it offers a realistic and interactive banking experience.",
+        tags: ["Java", "Swing", "AWT"],
+        liveDemo: "#",
+        sourceCode: "#"
+    },
+    {
+        name: "Motion Studio",
+        description: "Motion Studio is a visually engaging landing page for a fitness application. It features smooth scrolling, well-structured sections, prominent call-to-action buttons, and optimized load times, showcasing modern web design principles.",
+        tags: ["HTML", "CSS", "JavaScript"],
+        liveDemo: "#",
+        sourceCode: "#"
+    },
+    {
+        name: "Polaris",
+        description: "Polaris is a sophisticated multi-section landing page with subtle animations, anchored navigation, and a clear content hierarchy. It exemplifies contemporary web aesthetics and provides an elegant platform for showcasing digital products.",
+        tags: ["HTML", "CSS", "JavaScript"],
+        liveDemo: "#",
+        sourceCode: "#"
+    }
 ]
 
 export default projects
