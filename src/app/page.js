@@ -1,6 +1,38 @@
 import Sidebar from './components/Sidebar';
 import Link from 'next/link';
 import Image from 'next/image';
+import ProjectModal from './components/ProjectModal';
+
+const projects = [
+  {
+    name: "Checkmate",
+    description: "A mobile-first attendance tracking application built with Android that streamlines classroom check-ins while maintaining security and accuracy.",
+    tags: ["Java", "Firebase"],
+    liveDemo: "#",
+    sourceCode: "#"
+  },
+  {
+    name: "Manila Classico",
+    description: "A modern web application built with Next.js and Tailwind CSS.",
+    tags: ["Next.js", "Tailwind"],
+    liveDemo: "#",
+    sourceCode: "#"
+  },
+  {
+    name: "Marquee Cinemas",
+    description: "A cinema booking platform built with React and Firebase.",
+    tags: ["React", "Firebase"],
+    liveDemo: "#",
+    sourceCode: "#"
+  },
+  {
+    name: "Unity",
+    description: "A full-stack web application built with Next.js and Supabase.",
+    tags: ["Next.js", "Supabase"],
+    liveDemo: "#",
+    sourceCode: "#"
+  }
+]
 
 export default function Home() {
   return (
@@ -25,57 +57,19 @@ export default function Home() {
               <p className='font-semibold text-[16px] mb-[6px]'>Projects</p>
               <hr className='border-none h-[2px]' style={{background: 'linear-gradient(to right, black 62px, #E0E0E0 62px)'}} />
             </div>
-            <Link 
+            <Link
               href="/projects"
               className='w-full h-[60px] flex items-center justify-center bg-[#222222] text-white font-medium text-[16px] rounded-lg hover:bg-[#303030] hover:shadow-sm transition-colors duration-100 mb-[20px]'>
-                View all projects
+              View all projects
             </Link>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
-
-              <Link href='#' className='flex flex-col gap-[12px] group text-left'>
-                <div className='relative w-full aspect-video rounded-lg shadow-md overflow-hidden'>
-                  <div className='w-full h-full bg-[#E0E0E0]'></div>
-                  <div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200'></div>
-                  <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
-                    <div className='bg-white text-black font-medium text-[16px] px-[32px] py-[14px] rounded-lg'>View Details</div>
-                  </div>
-                </div>
-                <p className='font-medium text-[16px]'>Checkmate</p>
-              </Link>
-
-              <Link href='#' className='flex flex-col gap-[12px] group text-left'>
-                <div className='relative w-full aspect-video rounded-lg shadow-md overflow-hidden'>
-                  <div className='w-full h-full bg-[#E0E0E0]'></div>
-                  <div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200'></div>
-                  <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
-                    <div className='bg-white text-black font-medium text-[16px] px-[32px] py-[14px] rounded-lg'>View Details</div>
-                  </div>
-                </div>
-                <p className='font-medium text-[16px]'>Manila Classico</p>
-              </Link>
-
-              <Link href='#' className='flex flex-col gap-[12px] group text-left'>
-                <div className='relative w-full aspect-video rounded-lg shadow-md overflow-hidden'>
-                  <div className='w-full h-full bg-[#E0E0E0]'></div>
-                  <div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200'></div>
-                  <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
-                    <div className='bg-white text-black font-medium text-[16px] px-[32px] py-[14px] rounded-lg'>View Details</div>
-                  </div>
-                </div>
-                <p className='font-medium text-[16px]'>Marquee Cinemas</p>
-              </Link>
-
-              <Link href='#' className='flex flex-col gap-[12px] group text-left'>
-                <div className='relative w-full aspect-video rounded-lg shadow-md overflow-hidden'>
-                  <div className='w-full h-full bg-[#E0E0E0]'></div>
-                  <div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200'></div>
-                  <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
-                    <div className='bg-white text-black font-medium text-[16px] px-[32px] py-[14px] rounded-lg'>View Details</div>
-                  </div>
-                </div>
-                <p className='font-medium text-[16px]'>Unity</p>
-              </Link>
-
+              {projects.map((project) => (
+                <ProjectModal
+                  key={project.name}
+                  project={project}
+                  otherProjects={projects.filter(p => p.name !== project.name)}
+                />
+              ))}
             </div>
           </div>
 
