@@ -12,16 +12,18 @@ const switzer = localFont({
   ]
 });
 
+export const metadata = {
+  title: "Theojohn Sosa",
+};
+
 export default function RootLayout({ children }) {
   return (
-
     <html lang="en">
-      <body>
+      <body className={switzer.className}> 
         <Header />
         {children}
         <Footer />
       </body>
     </html>
-
   );
 }
