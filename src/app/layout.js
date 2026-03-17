@@ -14,6 +14,9 @@ const switzer = localFont({
 
 export const metadata = {
   title: "Theojohn Sosa",
+  icons: {
+    icon: "/tab-icon.png"
+  },
 };
 
 export default function RootLayout({ children }) {
