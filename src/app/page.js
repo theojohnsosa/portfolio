@@ -105,7 +105,7 @@ export default function Home() {
                   <p className='font-normal text-[12px] text-[#797979]'>Cloud Hosting</p>
                 </div>
               </div>
-              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-md rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
+              <div className='flex items-center w-full px-[24px] py-[10px] bg-[#F0F0F0] shadow-sm rounded-lg border border-[2px] border-transparent transition-all duration-100 hover:border-[#006EF4]'>
                 <Image className='mr-[20px]' src='/github 2.svg' alt='GitHub' width={40} height={40} />
                 <div className='flex flex-col'>
                   <p className='font-semibold text-[16px]'>GitHub</p>
