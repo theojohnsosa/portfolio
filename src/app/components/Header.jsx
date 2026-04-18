@@ -3,8 +3,10 @@
 import React from 'react'
 import Link from "next/link"
 import Image from "next/image"
+
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { motion } from 'motion/react'
 
 const Header = () => {
 
@@ -24,7 +26,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center sticky top-0 z-1 px-10 py-4 border-b border-[#E0E0E0] bg-[#F2F0EF]">
+      <motion.header 
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="flex justify-between items-center sticky top-0 z-1 px-10 py-4 border-b border-[#E0E0E0] bg-[#F2F0EF]">
         <Link href="/" className="font-semibold text-lg">
           © Theo
         </Link>
@@ -45,7 +51,7 @@ const Header = () => {
             height={24}
           />
         </button>
-      </header>
+      </motion.header>
       {menuOpen && (
         <div className="fixed top-0 right-0 h-full w-72 bg-[#F2F0EF] border-l border-[#E0E0E0] z-2 shadow-lg flex flex-col">
           <button
