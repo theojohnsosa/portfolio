@@ -1,11 +1,19 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { motion } from 'motion/react'
+
 const Sidebar = () => {
   return (
     <>
-        <aside className='w-full md:w-[360px] md:min-w-[360px] min-h-fit md:min-h-screen flex flex-col pt-[75px] pr-[24px] pl-[24px] pb-[20px] md:pb-[60px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
+        <motion.aside
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 10 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className='w-full md:w-[360px] md:min-w-[360px] min-h-fit md:min-h-screen flex flex-col pt-[75px] pr-[24px] pl-[24px] pb-[20px] md:pb-[60px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
             <div className='w-full flex flex-col mb-[20px]'>
                 <img
                     className='rounded-lg block mb-[10px]'
@@ -94,7 +102,7 @@ const Sidebar = () => {
                  />
                     GitHub Profile
             </Link>
-        </aside>
+        </motion.aside>
     </>
   )
 }
