@@ -15,7 +15,7 @@ export default function Home() {
         initial={{ opacity: 0, x: 15 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className='flex flex-col md:flex-row'>
+        className='flex flex-col md:flex-row min-h-screen'>
         <Sidebar />
         <main className='flex flex-col p-[40px] gap-[50px]'>
 
