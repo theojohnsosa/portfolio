@@ -1,13 +1,21 @@
+"use client"
+
 import Sidebar from './components/Sidebar'
 import Link from 'next/link'
 import Image from 'next/image'
 import ProjectModal from './components/ProjectModal'
 import projects from './data/projects'
 
+import { motion } from 'motion/react'
+
 export default function Home() {
   return (
     <>
-      <div className='flex flex-col md:flex-row'>
+      <motion.div
+        initial={{ opacity: 0, x: 15 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className='flex flex-col md:flex-row'>
         <Sidebar />
         <main className='flex flex-col p-[40px] gap-[50px]'>
 
@@ -165,7 +173,7 @@ export default function Home() {
           </div>
 
         </main>
-      </div>
+      </motion.div>
     </>
   )
 }
