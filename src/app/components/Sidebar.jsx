@@ -11,7 +11,7 @@ const Sidebar = () => {
     <>
         <motion.aside
             initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 10 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className='w-full md:w-[360px] md:min-w-[360px] min-h-fit md:min-h-screen flex flex-col pt-[75px] pr-[24px] pl-[24px] pb-[20px] md:pb-[60px] bg-[#F2F0EF] border-r border-[#E0E0E0]'>
             <div className='w-full flex flex-col mb-[20px]'>
