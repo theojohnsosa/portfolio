@@ -1,12 +1,20 @@
+"use client"
+
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import ProjectModal from '../components/ProjectModal'
 import projects from '../data/projects'
 
+import { motion } from 'motion/react'
+
 const page = () => {
   return (
     <>
-      <div className='flex flex-col md:flex-row'>
+      <motion.div
+        initial={{ opacity: 0, x: 15 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className='flex flex-col md:flex-row'>
         <div className='hidden md:block'>
           <Sidebar />
         </div>
@@ -34,7 +42,7 @@ const page = () => {
           </div>
 
         </main>
-      </div>
+      </motion.div>
     </>
   )
 }
