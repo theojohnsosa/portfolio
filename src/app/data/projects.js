@@ -8,6 +8,14 @@ const projects = [
         image: "/checkmate-mockup.svg",
     },
     {
+      name: "Checkmate Web",
+      description: "The official landing page for Checkmate — a mobile-first attendance tracking app for Android",
+      tags: ["Next.js", "Tailwind CSS", "Vercel"],
+      liveDemo: "https://checkmate-attendancetracker.vercel.app/",
+      sourceCode: "https://github.com/theojohnsosa/checkmate-web.git",
+      image: "/checkmate-web.svg",  
+    },
+    {
         name: "Manila Classico",
         description: "Manila Classico Barbershop Management System is a comprehensive desktop solution built with Java Swing and AWT in NetBeans. It optimizes booking, customer management, and barber scheduling, providing an efficient and user-friendly interface for barbershop operations.",
         tags: ["Java", "Swing", "AWT"],
